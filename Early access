@@ -57,7 +57,22 @@
     </ul>
 
     <p><strong>Disclaimer:</strong> This version is for demonstration only and not a full game release.</p>
-   <a href="https://mega.nz/file/jipkBAxQ#oSRF7JmWc5XVy9sVrbDZNKl0-5uxQHyZmJ20bbe4U" class="btn" target="_blank">Download Early Access</a>
+   <!DOCTYPE html>
+<html>
+<head>
+  <title>Urban X Download</title>
+</head>
+<body style="text-align:center; font-family:Arial;">
+  <h1>Download Urban X Early Access</h1>
+  <p>Click the button below to get the game from Mega.nz</p>
+  <a href="https://mega.nz/file/j1pkBAxQ#osRFZJmMwC5xVy9sVrhDZKKl0-5uxgQHyZmJ2obbe4U" target="_blank">
+    <button style="padding:15px 30px; font-size:18px; background:#d32f2f; color:white; border:none; border-radius:8px; cursor:pointer;">
+      Download Now
+    </button>
+  </a>
+</body>
+</html>
+
 
 
   </div>
