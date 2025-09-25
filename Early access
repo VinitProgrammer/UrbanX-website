@@ -8,7 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('https://your-splash-image-link.com/bg.jpg') no-repeat center center/cover;
+      background: url('https://github.com/VinitProgrammer/UrbanX-website/blob/main/ChatGPT%20Image%20Sep%2015,%202025,%2006_32_15%20PM.png?raw=true') no-repeat center center/cover;
       color: #fff;
       text-align: center;
     }
