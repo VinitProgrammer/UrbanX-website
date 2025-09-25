@@ -65,7 +65,8 @@
 <body style="text-align:center; font-family:Arial;">
   <h1>Download Urban X Early Access</h1>
   <p>Click the button below to get the game from Mega.nz</p>
-  <a href="https://mega.nz/file/j1pkBAxQ#osRFZJmMwC5xVy9sVrhDZKKl0-5uxgQHyZmJ2obbe4U" target="_blank">
+   <a href="https://mega.nz/file/j1pkBAxQ#osRFZJmMwC5xVy9sVrhDZKKl0-5uxgQHyZmJ2obbe4U" <h3></h3>
+          <h4>Download</h4> target="_blank">
     <button style="padding:15px 30px; font-size:18px; background:#d32f2f; color:white; border:none; border-radius:8px; cursor:pointer;">
       Download Now
     </button>
