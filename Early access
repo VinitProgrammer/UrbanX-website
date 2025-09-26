@@ -1,88 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Urban X - Early Access Download</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IG Studios — Urban X</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: url('https://github.com/VinitProgrammer/UrbanX-website/blob/main/ChatGPT%20Image%20Sep%2015,%202025,%2006_32_15%20PM.png?raw=true') no-repeat center center/cover;
-      color: #fff;
-      text-align: center;
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:#111;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      padding:20px
+    }
+    .hero{
+      width:100%;
+      max-width:1200px;
+      height:700px;
+      border-radius:14px;
+      overflow:hidden;
+      position:relative;
+      box-shadow:0 20px 60px rgba(2,6,23,0.6);
+      background-image: url('https://github.com/VinitProgrammer/UrbanX-website/blob/main/ChatGPT%20Image%20Sep%2026,%202025,%2004_04_25%20PM.png?raw=true'); /* apna image link yaha daalna */
+    background-size: 100% 
+      background-position:center;
+      background-repeat:no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:100px;
     }
 
-    header {
-      background: rgba(0,0,0,0.7);
-      padding: 20px;
+    /* dark overlay for contrast */
+    .hero::before{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(rgba(3,10,18,0.5), rgba(3,10,18,0.6));
+      pointer-events:none;
     }
 
-    header h1 {
-      font-size: 40px;
-      margin: 0;
-      color: #ffcc00;
-      letter-spacing: 3px;
+    .brand{
+      position:relative;
+      z-index:2;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:18px
+    }
+    .studio{
+      font-weight:700;
+      letter-spacing:6px;
+      font-size:36px;
+      opacity:0.95
+    }
+    .title{
+      font-size:160px;
+      line-height:0.9;
+      font-weight:800;
+      text-transform:capitalize;
+      margin-top: -10px;
+      text-shadow: 0 2px 0 rgba(0,0,0,0.35);
+      color:rgba(255,255,255,0.95)
     }
 
-    .content {
-      margin-top: 100px;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      border-radius: 12px;
+    /* responsive */
+    @media (max-width:900px){
+      .hero{height:520px}
+      .title{font-size:96px}
+      .studio{font-size:20px}
+    }
+    @media (max-width:520px){
+      .hero{height:420px;padding:500px}
+      .title{font-size:56px}
+      .studio{font-size:16px}
     }
 
-    .content h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
+    /* Button */
+    .btn{
+      display:inline-block;
+      text-decoration:none;
+      padding:14px 36px;
+      border-radius:12px;
+      font-weight:800;
+      letter-spacing:1px;
+      transition:transform .16s ease, box-shadow .16s
     }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 40px;
-      font-size: 20px;
-      font-weight: bold;
-      text-decoration: none;
-      background: #d32f2f;
-      color: #fff;
-      border-radius: 10px;
-      margin-top: 20px;
-      transition: 0.3s;
+    .primary{
+      background:#1565d8;
+      color:#fff;
+      box-shadow:0 10px 30px rgba(21,101,216,0.18)
     }
-
-    .btn:hover {
-      background: #ff0000;
-      transform: scale(1.05);
+    .primary:hover{
+      transform:translateY(-4px);
+      box-shadow:0 18px 40px rgba(21,101,216,0.28)
     }
-
-    footer {
-      margin-top: 150px;
-      padding: 20px;
-      background: rgba(0,0,0,0.7);
-      font-size: 14px;
+    .caption{
+      position:relative;
+      z-index:2;
+      margin-top:16px;
+      color:rgba(255,255,255,0.8);
+      font-size:14px
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>URBAN X</h1>
-    <p>An IG Studios Game</p>
-  </header>
-
-  <div class="content">
-    <h2>Early Access Available Now</h2>
-    <p>Experience the beginning of Urban X with our Early Access build.  
-       Explore, test, and enjoy – full release coming soon!</p>
-    
-    <!-- Replace MEGA link below -->
-    <a href="https://mega.nz/file/j1pkBAxQ#osRFZJmMwC5xVy9sVrhDZKKl0-5uxgQHyZmJ2obbe4U" class="btn" target="_blank">
-      DOWNLOAD NOW
-    </a>
-  </div>
-
-  <footer>
-    <p>© 2025 IG Studios. All rights reserved. | <a href="https://igstudios.onrender.com" target="_blank" style="color:#ffcc00;">Official Website</a></p>
-  </footer>
+  <main class="hero">
+    <header class="brand">
+      <div class="studio">IG STUDIOS</div>
+      <h1 class="title">Urban X</h1>
+      <a class="btn primary" href="store.html" id="buy-btn">BUY</a>
+    </header>
+    <p class="caption">A realistic, atmospheric urban promotional hero for your site.</p>
+  </main>
 </body>
 </html>
