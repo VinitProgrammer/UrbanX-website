@@ -20,14 +20,14 @@
           <div><span id="cd-mins">00</span><small>Minutes</small></div>
           <div><span id="cd-secs">00</span><small>Seconds</small></div>
         </div>
-        <div class="hero-ctas"><a class="btn primary" href="store.html">Pre-order / Buy</a><a class="btn ghost" href="trailers.html">Watch Trailers</a></div>
+        <div class="hero-ctas"><a class="btn primary" href="store.html">Buy</a><a class="btn ghost" href="trailers.html">Watch Trailers</a></div>
       </div>
     </section>
 
     <section class="section" id="news">
       <div class="section-inner">
         <h2>Latest News</h2>
-        <p class="lead">Trailer 2 coming last week of September 2025. Launch: 8 Jan 2026.</p>
+        <p class="lead">Trailer 2 coming october 2025..</p>
         <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
           <div style="background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:12px;border-radius:10px;min-width:220px">
             <strong>Trailer 2</strong><div style="color:var(--muted);margin-top:8px">Full reveal in Sep.</div>
