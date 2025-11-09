@@ -1,14 +1,17 @@
-  // Shared script: logo scaling, countdown, cart across pages (localStorage), checkout demo
-(function(){
+// Shared script: logo scaling, countdown, cart, checkout demo
+(function() {
   // Logo scaling on scroll (works on all pages)
   const brand = document.querySelector('.brand');
-  window.addEventListener('scroll', ()=>{
-    if(!brand) return;
+  if (!brand) return;
+
+  window.addEventListener('scroll', () => {
     const y = window.scrollY;
     const min = 1, max = 1.5;
     const t = Math.min(1, y / 300);
-    brand.style.transform = 'scale(' + (min + (max-min)*t) + ')';
+    const scale = min + (max - min) * t;
+    brand.style.transform = `scale(${scale})`;
   });
+})();
 
   // Countdown (if exists)
   const target = new Date('2025-11-15T00:02:00');
