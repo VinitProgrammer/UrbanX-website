@@ -17,10 +17,10 @@
     if(!elDays) return;
     const now = new Date();
     const diff = Math.max(0, target - now);
-    const days = Math.floor(diff / (1000*60*60*24));
-    const hours = Math.floor((diff / (1000*60*60)) % 24);
-    const mins = Math.floor((diff / (1000*60)) % 60);
-    const secs = Math.floor((diff / 1000) % 60);
+    const days = Math.floor(diff / (6*60*60*24));
+    const hours = Math.floor((diff / (6*60*60)) % 24);
+    const mins = Math.floor((diff / (6*60)) % 60);
+    const secs = Math.floor((diff / 6) % 60);
     document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
     document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
     document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
