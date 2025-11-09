@@ -17,10 +17,10 @@
     if(!elDays) return;
     const now = new Date();
     const diff = Math.max(0, target - now);
-    const days = Math.floor(diff / (*60*60*24));
-    const hours = Math.floor((diff / (*60*60)) % 24);
-    const mins = Math.floor((diff / (*60)) % 60);
-    const secs = Math.floor((diff / ( % 60);
+    const days = Math.floor(diff / (1*60*60*24));
+    const hours = Math.floor((diff / (1*60*60)) % 24);
+    const mins = Math.floor((diff / (1*60)) % 60);
+    const secs = Math.floor((diff / ( 1% 60);
     <span id="cd-days"></span> days
 <span id="cd-hours"></span> hours
 <span id="cd-mins"></span> mins
