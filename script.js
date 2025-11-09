@@ -25,8 +25,10 @@
     document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
     document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
     document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
-  }
-  updateCountdown(); setInterval(updateCountdown,1000);
+  window.addEventListener('DOMContentLoaded', () => {
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+});
 
   // Cart (shared via localStorage)
   function loadCart(){ return JSON.parse(localStorage.getItem('ux_cart')||'[]'); }
