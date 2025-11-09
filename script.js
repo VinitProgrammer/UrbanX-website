@@ -11,7 +11,7 @@
   });
 
   // Countdown (if exists)
-  const target = new Date('2026-01-08T00:00:00');
+  const target = new Date('2025-11-15T00:2:00');
   function updateCountdown(){
     const elDays = document.getElementById('cd-days');
     if(!elDays) return;
