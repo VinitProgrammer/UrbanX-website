@@ -1,4 +1,4 @@
-// Shared script: logo scaling, countdown, cart across pages (localStorage), checkout demo
+  // Shared script: logo scaling, countdown, cart across pages (localStorage), checkout demo
 (function(){
   // Logo scaling on scroll (works on all pages)
   const brand = document.querySelector('.brand');
@@ -11,7 +11,7 @@
   });
 
   // Countdown (if exists)
-  const target = new Date('2025-11-15T00:2:00');
+  const target = new Date('2025-11-15T00:02:00');
   function updateCountdown(){
     const elDays = document.getElementById('cd-days');
     if(!elDays) return;
