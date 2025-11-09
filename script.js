@@ -21,10 +21,11 @@
     const hours = Math.floor((diff / (*60*60)) % 24);
     const mins = Math.floor((diff / (*60)) % 60);
     const secs = Math.floor((diff / ( % 60);
-    document.getElementById('cd-days').textContent = String(days).padStart(2,'0');
-    document.getElementById('cd-hours').textContent = String(hours).padStart(2,'0');
-    document.getElementById('cd-mins').textContent = String(mins).padStart(2,'0');
-    document.getElementById('cd-secs').textContent = String(secs).padStart(2,'0');
+    <span id="cd-days"></span> days
+<span id="cd-hours"></span> hours
+<span id="cd-mins"></span> mins
+<span id="cd-secs"></span> secs
+
   window.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   setInterval(updateCountdown, 1000);
